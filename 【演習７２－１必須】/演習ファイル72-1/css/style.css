@@ -1,0 +1,85 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    box-sizing: border-box;
+}
+
+/* コンテナ */
+.container {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* カードレイアウト */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* タイトル */
+.card h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* 入力グループ */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 3.5vw;
+    box-sizing: border-box;
+}
+
+/* ボタン */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 4vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+    body {
+        font-size: 5vw;
+    }
+
+    .input-group input, button {
+        font-size: 4vw;
+    }
+}
